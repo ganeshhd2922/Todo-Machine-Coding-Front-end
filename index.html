@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo List - Machine Coding</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Todo List</h1>
+    <div class="input-group">
+      <input type="text" id="newTask" placeholder="Enter new task..." />
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div class="filters">
+      <button onclick="filterTasks('all')">All</button>
+      <button onclick="filterTasks('completed')">Completed</button>
+      <button onclick="filterTasks('pending')">Pending</button>
+    </div>
+
+    <div class="sorts">
+      <select id="sortBy" onchange="renderTasks()">
+        <option value="created">Sort by Created Time</option>
+        <option value="alpha">Sort Alphabetically</option>
+        <option value="status">Sort by Status</option>
+      </select>
+    </div>
+
+    <div id="taskList"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
