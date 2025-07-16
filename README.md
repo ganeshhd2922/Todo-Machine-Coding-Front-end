@@ -17,7 +17,7 @@ A clean, minimal, and beautifully styled Todo List built using **pure JavaScript
 
 - **HTML5**
 - **CSS3** with Glassmorphism + Gradient UI
-- **Vanilla JavaScript**
+- **Vanilla JavaScript** 
 - **LocalStorage API**
 
 ## 📦 Getting Started
